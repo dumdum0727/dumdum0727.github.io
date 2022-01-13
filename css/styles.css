@@ -136,14 +136,6 @@ p{
 
 @media(min-width: 600px){
 
-    .sp{
-        display: none !important;
-    }
-
-    .pc{
-        display: block !important;
-    }
-
     .main{
         width: 100%;
     }
@@ -169,6 +161,15 @@ p{
 /* large screen */
 
 @media(min-width: 800px){
+
+    .sp{
+        display: none !important;
+    }
+
+    .pc{
+        display: block !important;
+    }
+    
     .about .container{
         max-width: 800px;
         margin: 0 auto;

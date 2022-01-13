@@ -1,5 +1,160 @@
-h1{
-    font-size: 24px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #ddd;
+/* common */
+
+h2{
+    font-weight: normal;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+/* top */
+
+.arrow{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(70px);
+        opacity: 0;
+    }
+}
+
+/* about */
+
+.about h2{
+    margin-top: 140px;
+    margin-bottom: 20px;
+}
+
+
+
+.shida{
+    width: calc(100% - 70%);
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+
+.detail{
+    text-align: left;
+}
+
+.name{
+    font-size: 30px;
+}
+
+.detail>p{
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* works */
+
+/* skills */
+
+.skills img{
+    object-fit: cover;
+    width: 200px;
+    height: 300px;
+}
+
+.pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.skills .pie{
+    margin-bottom: 40px;
+}
+
+#html{
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 60%, #d9d9d9 60% 100%);
+}
+
+#css{
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 60%, #d9d9d9 60% 100%);
+}
+
+#php{
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 40%, #d9d9d9 40% 100%);
+}
+
+#java{
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 50%, #d9d9d9 50% 100%);
+}
+
+#kotlin{
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 40%, #d9d9d9 40% 100%);
+}
+
+#linux{
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 50%, #d9d9d9 50% 100%);
+}
+
+.pie span{
+    font-size: 25px;
+}
+
+/* medium screen */
+
+@media(min-width: 600px){
+
+    h2{
+        font-size: 35px;
+    }
+
+    .about .container{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        margin-right: calc(100% - 90%);
+        margin-left: calc(100% - 90%);
+    }
+
+    .skills .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* large screen */
+
+@media(min-width: 800px){
+    .about .container{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .skills .container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

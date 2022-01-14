@@ -5,6 +5,14 @@ h2{
     text-align: center;
     margin-top: 100px;
     margin-bottom: 60px;
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 li{
@@ -124,12 +132,45 @@ p{
     background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 40%, #d9d9d9 40% 100%);
 }
 
+#android{
+    text-align: center;
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 50%, #d9d9d9 50% 100%);
+}
+
 #linux{
     background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 50%, #d9d9d9 50% 100%);
 }
 
 .pie span{
     font-size: 25px;
+}
+
+/* links */
+
+.twitter,
+.instagram{
+    font-size: 50px;
+}
+
+.links .container{
+    display: flex;
+    justify-content: center;
+}
+
+.twitter{
+    margin-right: calc(100% - 90%);
+}
+
+footer{
+    margin-top: 20px;
+    background: #a9a9a9;
+    height: 100px;
+}
+
+footer p{
+    text-align: center;
+    line-height: 100px;
+    opacity: .8;
 }
 
 /* medium screen */

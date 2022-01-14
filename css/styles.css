@@ -157,6 +157,10 @@ p{
     justify-content: center;
 }
 
+.links a{
+    color: black;
+}
+
 .twitter{
     margin-right: calc(100% - 90%);
 }

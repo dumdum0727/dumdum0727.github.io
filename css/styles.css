@@ -117,7 +117,11 @@ p{
 }
 
 #css{
-    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 60%, #d9d9d9 60% 100%);
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 50%, #d9d9d9 50% 100%);
+}
+
+#JS{
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 10%, #d9d9d9 10% 100%);
 }
 
 #php{
@@ -125,20 +129,25 @@ p{
 }
 
 #java{
-    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 50%, #d9d9d9 50% 100%);
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 40%, #d9d9d9 40% 100%);
 }
 
 #kotlin{
     background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 40%, #d9d9d9 40% 100%);
 }
 
+#eclipse{
+    text-align: center;
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 25%, #d9d9d9 25% 100%);
+}
+
 #android{
     text-align: center;
-    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 50%, #d9d9d9 50% 100%);
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 30%, #d9d9d9 30% 100%);
 }
 
 #linux{
-    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 50%, #d9d9d9 50% 100%);
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 40%, #d9d9d9 40% 100%);
 }
 
 .pie span{

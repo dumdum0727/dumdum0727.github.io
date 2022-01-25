@@ -233,3 +233,17 @@ footer p{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+/* ふわっと表示 */
+
+.fuwa {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 1s;
+  }
+  .fuwa.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }

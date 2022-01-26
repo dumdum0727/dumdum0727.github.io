@@ -102,6 +102,11 @@ p{
     margin-bottom: 80px;
 }
 
+.work h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .works img{
     display: block;
     width: 80%;

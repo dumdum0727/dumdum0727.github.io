@@ -60,6 +60,10 @@ p{
 
 /* about */
 
+.about{
+    margin-bottom: 200px;
+}
+
 .about h2{
     margin-top: 140px;
     margin-bottom: 20px;
@@ -89,6 +93,39 @@ p{
 }
 
 /* works */
+
+.works > h2{
+    padding-bottom: 100px;
+}
+
+.work{
+    margin-bottom: 80px;
+}
+
+.works img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.work:hover{
+    opacity: .8;
+}
+
+.works h3{
+    margin: 0;
+    margin-bottom: 20xp;
+}
+
+.works a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.works p{
+    text-align: center;
+}
 
 /* skills */
 
@@ -206,6 +243,11 @@ footer p{
         margin-left: calc(100% - 90%);
     }
 
+    .works .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .skills .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -227,6 +269,11 @@ footer p{
     .about .container{
         max-width: 800px;
         margin: 0 auto;
+    }
+
+    .works .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .skills .container{

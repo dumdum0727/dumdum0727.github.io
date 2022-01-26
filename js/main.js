@@ -3,7 +3,7 @@
 function showElementAnimation() {
     const elements = document.getElementsByClassName('fuwa');
   
-    const showTiming = window.innerHeight > 200; 
+    const showTiming = window.innerHeight > 300; 
     const scrollY = window.pageYOffset;
     const windowH = window.innerHeight;
   

@@ -1,21 +1,26 @@
-'use strict'
+'use strict';
 
-function showElementAnimation() {
-    const elements = document.getElementsByClassName('fuwa');
-  
-    const showTiming = window.innerHeight > 200; 
-    const scrollY = window.pageYOffset;
-    const windowH = window.innerHeight;
-  
-    for (let i=0;i<elements.length;i++) {
-      const clientRect = elements[i].getBoundingClientRect();
-      const elemY = scrollY + clientRect.top;
-      if(scrollY + windowH - showTiming > elemY) {
-        elements[i].classList.add('show');
-      } else if(scrollY + windowH < elemY) {
-        elements[i].classList.remove('show');
+{
+  function callback(entries, obs) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
       }
-    }
+
+      entry.target.classList.add('appear');
+      obs.unobserve(entry.target);
+    });
   }
-  showElementAnimation();
-  window.addEventListener('scroll', showElementAnimation);
+
+  const options = {
+    threshold: 0.3,
+  };
+
+  const observer = new IntersectionObserver(callback, options);
+
+  const targets = document.querySelectorAll('.animate');
+
+  targets.forEach(target => {
+    observer.observe(target);
+  });
+}

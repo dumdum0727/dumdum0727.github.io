@@ -100,6 +100,7 @@ p{
 
 .work{
     margin-bottom: 80px;
+    pointer-events: none;
 }
 
 .work h3{
@@ -112,6 +113,12 @@ p{
     width: 80%;
     margin: 0 auto;
     max-width: 300px;
+    pointer-events: all;
+    outline: auto;
+}
+
+.works img:hover{
+    opacity: .8;
 }
 
 .work:hover{
@@ -120,7 +127,7 @@ p{
 
 .works h3{
     margin: 0;
-    margin-bottom: 20xp;
+    margin-bottom: 10xp;
 }
 
 .works a{
@@ -236,10 +243,6 @@ footer p{
         width: 100%;
     }
 
-    h2{
-        /* font-size: 35px; */
-    }
-
     .about .container{
         justify-content: space-between;
         display: flex;
@@ -286,18 +289,15 @@ footer p{
     }
 }
 
-/* ふわっと表示 */
+/* animate */
 
-.fuwa {
+.animate{
     opacity: 0;
-    visibility: hidden;
-    /* transform: translateY(50px); */
-    transform: translateY(50px);
-    transition: all 1s;
-  }
-  .fuwa.show {
+    transform: translateY(40px);
+    transition: opacity 1s, transform 1s;
+}
+
+.animate.appear{
     opacity: 1;
-    visibility: visible;
-    /* transform: translateY(0px); */
-    transform: translateY(0px);
-  }
+    transform: none;
+}

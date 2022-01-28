@@ -69,9 +69,11 @@ p{
     margin-bottom: 20px;
 }
 
-
-
 .shida{
+    display: none;
+}
+
+.shida.appear{
     width: calc(100% - 70%);
     display: block;
     margin: 0 auto;

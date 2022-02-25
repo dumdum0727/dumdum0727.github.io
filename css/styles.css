@@ -105,7 +105,7 @@ p{
 }
 
 .worknone{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     pointer-events: none;
 }
 
@@ -143,6 +143,11 @@ p{
 
 .works p{
     text-align: center;
+}
+
+.link {
+    display: block;
+    padding-bottom: 50px;
 }
 
 .link:hover {

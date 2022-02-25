@@ -100,8 +100,12 @@ p{
     padding-bottom: 100px;
 }
 
-.work{
-    margin-bottom: 80px;
+.work {
+    text-align: center;
+}
+
+.worknone{
+    margin-bottom: 30px;
     pointer-events: none;
 }
 
@@ -132,13 +136,17 @@ p{
     margin-bottom: 10xp;
 }
 
-.works a{
+.worknone a{
     text-decoration: none;
     color: inherit;
 }
 
 .works p{
     text-align: center;
+}
+
+.link:hover {
+    opacity: .8;
 }
 
 /* skills */
@@ -176,7 +184,7 @@ p{
 }
 
 #php{
-    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 40%, #d9d9d9 40% 100%);
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 50%, #d9d9d9 50% 100%);
 }
 
 #java{
@@ -199,6 +207,14 @@ p{
 
 #linux{
     background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 40%, #d9d9d9 40% 100%);
+}
+
+#laravel{
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 20%, #d9d9d9 20% 100%);
+}
+
+#docker{
+    background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#4169e1 0% 10%, #d9d9d9 10% 100%);
 }
 
 .pie span{
